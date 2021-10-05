@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="clock.css">
+
+</head>
+<body> <div class="clock">
+    <div class="hours">
+        <div class="time" id="hrs"></div>
+        <div class="hdd">HOURS</div>
+    </div>
+    <div class="min">
+        <div class="time" id="min"></div>
+        <div class="hdd">MINUTES</div>
+    </div>
+    <div class="seconds">
+        <div class="time" id="sec"></div>
+        <div class="hdd">SECONDS</div>
+    </div>
+    
+    <input type="time" name="" id="ool" value="00:00:01">
+    <button class="yoo" onclick="popup()">Save </button>
+     
+    </div>
+    
+      
+    <audio  loop id="myVoice">
+    <source src="song1.mp3" type="">
+    </audio>
+    <button id="wer" onclick="snooze()+stop()+msg()">SNOOZE</button>
+    <button id="rtt" onclick="stop()">STOP  </button>
+    <div id="popup"></div>
+    <div id="message"></div>
+
+    <script src="clock.js"></script>
+</body>
+</html>

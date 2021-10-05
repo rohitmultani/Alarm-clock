@@ -1,0 +1,135 @@
+ body{
+            /* background: linear-gradient(to top right, #cc66ff 0%, #ccff33 100%); */
+            background-color:tan;
+            
+        }
+.clock{
+    position: absolute;
+    top:30%;
+    left:10%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px
+}
+.hours,.min,.seconds{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+        height: 350px;
+    }
+.time,.hdd{
+    border:1px solid black;
+   
+}
+.time{
+    background-color: rgb(12, 193, 238);
+    opacity:60%;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 180px;
+}
+.hdd{
+    background-color: rgb(12, 193, 238);
+    opacity: 80%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+}
+input[type=time]{font-size: 40px;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    top: 130%;
+    left:20%
+}
+.yoo{
+    height: 50px;
+    width: 120px;  
+    font-size: 30px;
+    position: absolute;
+    top: 150%;
+    left:25%;
+    
+}
+#wer{
+    height: 60px;
+    width: 139px;  
+    font-size: 30px;
+    position: absolute;
+    top: 85%;
+    left:57%;
+    
+}
+#rtt{margin: 10px;
+    height: 50px;
+    width: 120px;  
+    font-size: 30px;
+    position: absolute;
+    top: 94.5%;
+    left:57%
+
+}
+#popup{
+    display:none;   
+    position: absolute;
+    left:25%;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    border:3px solid black;
+    width:50%;
+    animation:disolve 3s alternate infinite ;
+}
+#message  {
+    display:none;   
+    position: absolute;
+    top:10%;
+    left:25%;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    border:3px solid black;
+    width:50%;
+    /* animation:disolve 3s alternate infinite ; */
+}
+
+@media screen and (min-width:260px) 
+and (max-width:720px){
+    input[type=time]{
+        position: absolute;
+        top: 130%;
+        left:67%;
+    }
+    .yoo{
+        
+        position: absolute;
+        top: 150%;
+        left:80%;
+        
+    }
+    #wer{
+        
+        position: absolute;
+        top: 135%;
+        left:67%;
+        
+    }
+    #rtt{
+        position: absolute;
+        top:120.5%;
+        left:67%
+    
+    }
+    
+}
+@keyframes disolve {
+    from{
+        opacity:100%;
+    }
+    to{
+        opacity: 0%;
+    }
+    
+}
+    
+}
